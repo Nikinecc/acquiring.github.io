@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.main {
+    height: 100vh;
+    padding: 0px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#card-green__form-first {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.card-green {
+    padding: 45px 25px;
+    width: fit-content;
+    border: 2px solid silver;
+    border-radius: 15px;
+    transition: all ease .3s;
+}
+.card-green:hover{
+    -webkit-box-shadow: -9px 9px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -9px 9px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: -9px 9px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.card-green__form h1 {
+    text-align: center;
+}
+
+.card-green input {
+    padding: 10px 0px;
+    font-size: 24px;
+    border: none;
+    border-bottom: 2px solid silver;
+}
+
+.card-green_down-input {
+    margin-top: 30px;
+}
+
+#card-green_down-input-first {
+    margin-right: 25px;
+}
+
+#card-green__form-btn {
+    margin-top: 30px;
+    width: 100%;
+    background-color: rgb(238, 235, 235);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+#card-green__form-btn:hover {
+    background-color: rgb(66, 165, 66);
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -webkit-moz-appearance: textfield;
+}
+
+/* ----------------------------------------------------------- */
+.cart-holder{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.holder-item{
+    display: flex;
+    align-items: center;
+    transition: all ease .3s;
+    margin-top: 20px;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+.holder-item:hover{
+    background-color: rgb(238, 235, 235);
+}
+.holder-item:first-child{
+    margin-top: 0px;
+}
+.holder-item img{
+    max-width: 200px;
+    border-radius: 10px;
+}
+.item-info{
+    margin-left: 40px;
+    font-size: 24px;
+    padding: 0px 20px;
+}
+.info-price{
+    margin-top: 20px;
+    font-weight: bold;
+}
