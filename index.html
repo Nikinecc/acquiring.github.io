@@ -15,41 +15,42 @@
 
 <body>
     <div class="main">
-        <div class="cart">
-            <div class="cart-holder">
-                <div class="holder-item">
-                    <div class="item-img"><img src="poverbank.png" alt=""></div>
-                    <div class="item-info">
-                        <div class="info-name">Повербанк</div>
-                        <div class="info-price">2000₽</div>
-                    </div>
+        <div class="main-info">
+            <div class="main-info_holder-item">
+                <div class="holder-item_item">
+                    <div class="item-title">Оплата заказа на сайте</div>
+                    <div class="item-info"><a href="https://www.youtube.com/">YouTube</a></div>
                 </div>
-                <div class="holder-item">
-                    <div class="item-img"><img src="poverbank.png" alt=""></div>
-                    <div class="item-info">
-                        <div class="info-name">Повербанк</div>
-                        <div class="info-price">2000₽</div>
-                    </div>
+                <div class="holder-item_item">
+                    <div class="item-title">Сумма Вашего заказа</div>
+                    <div class="item-info red">6 091.00 RUB</div>
                 </div>
-                <div class="holder-item">
-                    <div class="item-img"><img src="poverbank.png" alt=""></div>
-                    <div class="item-info">
-                        <div class="info-name">Повербанк</div>
-                        <div class="info-price">2000₽</div>
-                    </div>
+                <div class="holder-item_item">
+                    <div class="item-title">Номер операции</div>
+                    <div class="item-info red">44220</div>
                 </div>
             </div>
         </div>
-        <div class="card">
-            <div class="card-green">
-                <form action="#" class="card-green__form">
-                    <h1>Новая карта</h2>
-                    <input type="number" name="number-card" placeholder="Номер карты" id="card-green__form-first" required>
-                    <div class="card-green_down-input">
-                        <input type="text" name="mounth" placeholder="Месяц/год" id="card-green_down-input-first" required>
-                        <input type="text" name="CVC" placeholder="CVC"  required>
+        <div class="main-card">
+            <div class="card-face">
+                <form action="#" class="card-face_form">
+                    <div class="form-text">Номер карты</div>
+                    <input type="number" name="number">
+                    <div class="form_month">
+                        <div class="form-text">Срок действия(ММ/ГГ)</div>
+                        <input type="number" name="month">
+                        /
+                        <input type="number" name="year">   
                     </div>
-                    <input type="submit" name="go" value="Подтвердить" id="card-green__form-btn">
+                    <div class="form-text">Имя держателя карты</div>
+                    <input type="text" name="name">
+                </form>
+            </div>
+            <div class="card-back">
+                <div class="card-back_stripe"></div>
+                <form action="#" class="card-back_form">
+                    <div class="form-text">CVC/CVV</div>
+                    <input type="number" name="CVC">
                 </form>
             </div>
         </div>
