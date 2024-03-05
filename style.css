@@ -19,21 +19,54 @@ input:focus {
     outline: none;
 }
 
+header {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: 10pt;
+    color: rgb(107, 107, 107);
+    line-height: 16pt;
+}
+
+header span {
+    color: black;
+    font-weight: 700;
+}
+
+#logo {
+    margin-right: 30px;
+}
+
+
+nav {
+    display: flex;
+}
+
+.nav {
+    margin-right: 30px;
+    padding-right: 30px;
+    border-right: 1px solid rgb(196, 196, 196);
+}
+
 .main {
-    padding: 215px;
+    padding: 55px 150px 0px 150px;
     display: flex;
     justify-content: left;
     align-items: center;
 }
 
 .main-info {
-    margin-right: 730px;
+    margin-right: 735px;
+    border: 12px solid rgb(52 183 92);
+    border-radius: 21px;
+    -webkit-box-shadow: 14px 13px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 14px 13px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 14px 13px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .holder-item_item {
     border-bottom: 2px solid rgb(154, 154, 154);
-    padding: 15px 0px;
-    width: 100%;
+    padding: 45px 225px 45px 30px;
     margin-top: 30px;
 }
 
@@ -52,23 +85,31 @@ input:focus {
 }
 
 .item-info {
-    font-size: 24px;
+    font-size: 34px;
     font-weight: bold;
+}
+
+.item-info a {
+    color: black;
 }
 
 .item-info.red {
     color: red;
 }
+
+/* --------------------------------------------------------- */
 .main-card {
     position: relative;
     top: -178px;
     left: -341px;
+    width: fit-content;
+    height: fit-content;
 }
 
 .card-face {
     width: fit-content;
     padding: 20px 10px;
-    background-color: rgb(164, 202, 211);
+    background-color: rgb(52 183 92);
     border-radius: 10px;
     z-index: 2;
     position: absolute;
@@ -112,8 +153,7 @@ input:focus {
     height: 195px;
     border-radius: 10px;
     position: absolute;
-    background: rgb(129, 166, 174);
-    background: linear-gradient(180deg, rgba(129, 166, 174, 1) 25%, rgba(121, 148, 155, 1) 71%);
+    background-color: rgb(52, 141, 78);
     top: 28px;
     left: 172px;
     padding: 50px 0px;
@@ -139,4 +179,44 @@ input:focus {
 .card-back_form input {
     max-width: 55px;
     background-color: rgb(177, 201, 205);
+}
+
+.oplata {
+    width: 400px;
+    position: absolute;
+    bottom: -418px;
+    right: -609px;
+}
+
+/* --------------------------------------------------------- */
+.footer {
+    padding: 50px 150px 50px 150px;
+    text-align: center;
+}
+
+.footer-button button {
+    padding: 30px 40px;
+    font-size: 32px;
+    width: 300px;
+    background-color: rgb(52, 183, 92);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    -webkit-box-shadow: 6px 7px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 6px 7px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 6px 7px 8px 0px rgba(34, 60, 80, 0.2);
+    transition: all ease .2s;
+}
+.footer-button button:hover{
+    background-color: rgb(52, 141, 78);
+}
+#cncl {
+    margin-right: 150px;
+    background-color: rgb(177, 201, 205);
+    color: rgb(83, 82, 82);
+}
+#cncl:hover{
+    background-color: rgb(150, 158, 160);
+    color: rgb(255, 255, 255);
 }
