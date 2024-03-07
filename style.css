@@ -4,6 +4,12 @@
     font-family: "Roboto", sans-serif;
 }
 
+html,
+body {
+    overflow: hidden;
+}
+
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -19,54 +25,38 @@ input:focus {
     outline: none;
 }
 
-header {
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    font-size: 10pt;
-    color: rgb(107, 107, 107);
-    line-height: 16pt;
-}
-
-header span {
-    color: black;
-    font-weight: 700;
-}
-
-#logo {
-    margin-right: 30px;
-}
-
-
-nav {
-    display: flex;
-}
-
-.nav {
-    margin-right: 30px;
-    padding-right: 30px;
-    border-right: 1px solid rgb(196, 196, 196);
+.bg {
+    width: 50%;
+    height: 229vh;
+    transform: rotate(63deg);
+    background: rgb(52, 183, 92);
+    background: linear-gradient(310deg, rgba(52, 183, 92, 1) 35%, rgba(52, 141, 78, 1) 71%);
+    position: absolute;
+    top: -1020px;
+    left: 247px;
+    z-index: -1;
 }
 
 .main {
-    padding: 55px 150px 0px 150px;
+    padding: 114px 150px 0px 33px;
     display: flex;
     justify-content: left;
     align-items: center;
 }
 
 .main-info {
-    margin-right: 735px;
-    border: 12px solid rgb(52 183 92);
+    margin-right: 975px;
     border-radius: 21px;
     -webkit-box-shadow: 14px 13px 8px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 14px 13px 8px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 14px 13px 8px 0px rgba(34, 60, 80, 0.2);
+    background-color: white;
+    margin-top: -67px;
 }
 
 .holder-item_item {
     border-bottom: 2px solid rgb(154, 154, 154);
-    padding: 45px 225px 45px 30px;
+    padding: 55px 200px 48px 81px;
     margin-top: 30px;
 }
 
@@ -99,6 +89,7 @@ nav {
 
 /* --------------------------------------------------------- */
 .main-card {
+    margin-top: 360px;
     position: relative;
     top: -178px;
     left: -341px;
@@ -190,7 +181,7 @@ nav {
 
 /* --------------------------------------------------------- */
 .footer {
-    padding: 50px 150px 50px 150px;
+    padding: 170px 150px 50px 150px;
     text-align: center;
 }
 
@@ -208,15 +199,18 @@ nav {
     box-shadow: 6px 7px 8px 0px rgba(34, 60, 80, 0.2);
     transition: all ease .2s;
 }
-.footer-button button:hover{
+
+.footer-button button:hover {
     background-color: rgb(52, 141, 78);
 }
+
 #cncl {
     margin-right: 150px;
     background-color: rgb(177, 201, 205);
     color: rgb(83, 82, 82);
 }
-#cncl:hover{
+
+#cncl:hover {
     background-color: rgb(150, 158, 160);
     color: rgb(255, 255, 255);
 }
